@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import { pipeline } from "@xenova/transformers";
 
-const dataPath = path.join("../scrapper/websiteData.json");
+const dataPath = path.join("./websiteData.json");
 const outputPath = path.join("./websiteEmbeddings.json");
 
 async function runEmbedding() {
