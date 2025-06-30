@@ -45,7 +45,7 @@ Examples:
   const answer = data.choices[0].message.content.trim().toLowerCase();
 
   if (!["general", "rag", "tool"].includes(answer)) {
-    throw new Error(`Unexpected route type: ${answer}`);
+    return "general"; // Default to general if classification is invalid
   }
 
   return answer;
