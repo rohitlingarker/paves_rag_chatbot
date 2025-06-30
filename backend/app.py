@@ -51,4 +51,4 @@ Here is some internal knowledge and company context you can use to answer questi
         return jsonify({"reply": "An error occurred while processing your request."})
 
 if __name__ == "__main__":
-    app.run(debug=True,host='0.0.0.0',port=5000)
+    app.run(debug=True,host='0.0.0.0',port=3000)
